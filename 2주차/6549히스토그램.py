@@ -1,5 +1,7 @@
 import sys
+from collections import deque
 
 arr = list(map(int, sys.stdin.readline().split()))
 
-print(arr)
+n = arr.pop(0)
+
