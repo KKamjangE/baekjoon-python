@@ -28,5 +28,5 @@ for _ in range(m): # 인접 리스트에 간선 저장
 
 visit = [False] * (n + 1) # 방문 리스트 생성
 
-dfs(1) # 루트가 1로 주어진다
+bfs(1) # 루트가 1로 주어진다
 print(count)
