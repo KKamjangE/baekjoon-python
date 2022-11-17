@@ -35,7 +35,7 @@ while que: # 큐가 빌 때까지
             parts[next][node] += need_parts # 목적지에 가중치 저장
         else:
             for i in range(1, N + 1):
-                parts[next][i] += parts[node][i] * need_parts # 이전에 필요 부품 * 가중치
+                parts[next][i] += parts[node][i] * need_parts # 현재 부품을 만드는데 필요 부품 * 다음 부품의 필요 수
 
         inDegree[next] -= 1 # 진입차수 제거 -1
 
@@ -43,5 +43,5 @@ while que: # 큐가 빌 때까지
             que.append(next) # 큐에 push
         
 for i in range(1, N):
-    if parts[N][i] != 0:
+    if parts[N][i] != 0: # 완제품 배열에서 0이 아닌것만 출력
         print(i, parts[N][i])
