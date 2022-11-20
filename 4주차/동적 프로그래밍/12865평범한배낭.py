@@ -7,8 +7,8 @@ knapsack = [[0 for _ in range(K + 1)] for _ in range(N + 1)] # 그래프
 
 arr = [list(map(int, input().split())) for _ in range(N)] # 물건의 종류 배열
 
-# print(*arr, sep='\n')
-# print(*knapsack, sep='\n')
+print(*arr, sep='\n')
+print(*knapsack, sep='\n')
 
 for i in range(1, N + 1): # 물건의 개수만큼
     for j in range(1, K + 1): # 가방의 무게 만큼
